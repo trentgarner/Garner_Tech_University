@@ -9,7 +9,19 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.create
+    @student = Student.new(student_params)
+    if @student.save
+      flash[:success] = "Student Account Created!"
+      redirect_to root_path
+    else
+      render 'new'
+    end
   end
-  
+
+  private
+
+  def student_params
+    params.require(:student).permit(:name, :email)
+  end
+
 end
