@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version TST
 
 * System dependencies
 
@@ -22,5 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# Garner_Tech_University
 # Garner_Tech_University
